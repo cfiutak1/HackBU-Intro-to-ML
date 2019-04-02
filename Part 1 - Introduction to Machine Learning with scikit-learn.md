@@ -4,7 +4,7 @@ The first step to developing a good machine learning algorithm is using a good d
 The scikit-learn library comes with some good starting datasets. For today's activity, we'll be recognizing handwritten numbers from scikit-learn's `digits` dataset. This dataset contains over 1700 labeled 8x8 pixel images of handrawn numerical digits.
 
 To use this dataset, we'll import the `load_digits` function from `sklearn.datasets` and store it in a variable called `digits`.
-```
+```python
 from sklearn.datasets import load_digits
 digits = load_digits()
 ```
@@ -14,19 +14,19 @@ digits = load_digits()
 
 # Exploring a Dataset
 To get a better sense of what we're working with, let's take a look at the attributes of `digits`. If we add the following line to our code, we can see that the digits dataset has 5 attributes - `DESCR`, `data`, `images`, `target`, and `target_names`. 
-```
+```python
 print(dir(digits))
 ```
 &nbsp;
 
 If we want to know even more about the dataset, we can print the description of `digits`.
-```
+```python
 print(digits.DESCR)
 ```
 &nbsp;
 
 For thoroughness, we can print the shape of the dataset with
-```
+```python
 print(digits.data.shape) # Should show 1797 rows and 64 columns
                          # Each row contains the data of an image
                          # Each column is representative of one pixel in the image
@@ -34,7 +34,7 @@ print(digits.data.shape) # Should show 1797 rows and 64 columns
 &nbsp;
 
 We can also use the matplotlib library to display the images in this dataset. Add the following code to your script to display the first image in the dataset:
-```
+```python
 import matplotlib.pyplot as plt 
 plt.gray() 
 plt.matshow(digits.images[0]) # Change the number here to look at different images
@@ -65,7 +65,7 @@ To better visualize this relationship, think of a time where you studied for a m
 
 Thankfully, scikit-learn gives us a method for automatically splitting up our full dataset into smaller training and testing sets.
 
-```
+```python
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(digits.data, 
                                                     digits.target, 
@@ -102,11 +102,11 @@ For now, we'll start off with two regression-based algorithms for supervised lea
 &nbsp;
 
 We'll start by importing both algorithms from scikit-learn.
-```
+```python
 from sklearn.linear_model import LinearRegression, LogisticRegression
 ```
 **Linear Regression**
-```
+```python
 # Initialize a LinearRegression object
 linear_model = LinearRegression()
 # Fit the LinearRegression algorithm with the training data
@@ -122,7 +122,7 @@ However, there are cases where drawing a simple line of best fit just won't help
 Logistic Regression might come in handy!
 
 **Logistic Regression**
-```
+```python
 # Initialize a LogisticRegression object
 logistic_model = LogisticRegression()
 # Fit the LogisticRegression algorithm with the training data
@@ -140,12 +140,12 @@ Linear Regression is generally used for predicting continuous values.
 ## Results
 
 And now to test these algorithms:
-```
+```python
 print("Linear Regression accuracy:", str(linear_model.score(X_test, Y_test) * 100) + "%")
 print("Logistic Regression accuracy:", str(logistic_model.score(X_test, Y_test) * 100) + "%")
 ```
 
-```
+```python
 Linear Regression accuracy: 57.76594509083273%
 Logistic Regression accuracy: 94.88320355951056%
 ```
