@@ -76,10 +76,10 @@ In the above example, we import the `train_test_split` method from scikit-learn'
 * `Y_test`, a one-dimensional array containing the expected outcome of each data entry in `X_test`.
 
 Continuing our analogy of studying for a math exam, 
-* `X_train` contains all of your answers to the practice problems
+* `X_train` contains all your answers to the practice problems
 * `Y_train` contains all the correct answers to the practice problems
-* `X_test` contains all of your answers to the real exam
-* `Y_test` contains all of the correct answers to the real exam
+* `X_test` contains all your answers to the real exam
+* `Y_test` contains all the correct answers to the real exam
 
 
 ### 🤔 Food for Thought 
