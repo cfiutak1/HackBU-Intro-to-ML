@@ -65,7 +65,8 @@ model = tf.keras.models.Sequential([
   # Softmax turns the arbitrary outputs of the neural network into "probabilities"
   tf.keras.layers.Dense(10, activation='softmax')
 ])
-
+```
+```
 # Compile the model
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
