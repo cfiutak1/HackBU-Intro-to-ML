@@ -95,8 +95,8 @@ It can be tough to find a good ratio between the training and testing set size. 
 
 ---
 
-# Implementing a Machine Learning Algorithm
-Let's get to the fun part - implementing these algorithms.
+# Using a Machine Learning Algorithm
+Let's get to the fun part - using these algorithms.
 For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
 &nbsp;
 &nbsp;
@@ -113,6 +113,14 @@ linear_model = LinearRegression()
 linear_model.fit(X_train, Y_train)
 ```
 
+Linear Regression is one of the gold standards in machine learning algorithms. It's very simple, powerful, and easy to
+interpret. You can think of it as trying to draw a line of best fit in your data like so:
+
+![Linear Regression](images/line-of-best-fit.png)
+
+However, there are cases where drawing a simple line of best fit just won't help. That's where
+Logistic Regression might come in handy!
+
 **Logistic Regression**
 ```
 # Initialize a LogisticRegression object
@@ -120,6 +128,16 @@ logistic_model = LogisticRegression()
 # Fit the LogisticRegression algorithm with the training data
 logistic_model.fit(X_train, Y_train)
 ```
+
+In a very simple case, Logistic Regression can kind of be thought as drawing an
+S-shaped line of best fit. Here's an example of where that might come in handy:
+
+![Logistic Regression](images/logit.jpeg)
+
+But Logistic Regression is generally used for classifying discrete values, whereas
+Linear Regression is generally used for predicting continuous values.
+
+## Results
 
 And now to test these algorithms:
 ```
