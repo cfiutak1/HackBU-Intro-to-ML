@@ -1,7 +1,7 @@
 # Finding a Dataset
-The first step to developing a good machine learning algorithm is using a good dataset. Many of the most accurate machine learning algorithms have millions if not billions of entries in their training data sets. Fortuntately for us, there are many robust datasets we can use to build our ML algorithms. 
+The first step to developing a good machine learning algorithm is using a good dataset. Many of the most accurate machine learning algorithms have millions if not billions of entries in their training data sets. Fortuntately for us, there are many small yet robust datasets we can use to build our ML algorithms. 
 
-The scikit-learn library comes with some good starting datasets. For today's activity, we'll be using the digits dataset, which contains images of handwritten numerical digits. To use this dataset, we'll import the load_digits function from sklearn.datasets and store it in a variable called digits.
+The scikit-learn library comes with some good starting datasets. For today's activity, recognizing handwritten numbers from scikit-learn's `digits` dataset. To use this dataset, we'll import the `load_digits` function from `sklearn.datasets` and store it in a variable called `digits`.
 ```
 from sklearn.datasets import load_digits
 digits = load_digits()
@@ -118,3 +118,12 @@ And now to test these algorithms:
 print("Linear Regression accuracy:", str(linear_model.score(X_test, Y_test) * 100) + "%")
 print("Logistic Regression accuracy:", str(logistic_model.score(X_test, Y_test) * 100) + "%")
 ```
+
+```
+Linear Regression accuracy: 57.76594509083273%
+Logistic Regression accuracy: 94.88320355951056%
+```
+&nbsp;
+
+Clearly, logistic regression is a far more suitable algorithm for this
+
