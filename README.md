@@ -53,3 +53,21 @@ We'll start by importing both algorithms from scikit-learn.
 from sklearn.linear_model import LinearRegression, LogisticRegression
 ```
 
+Now, we're going to split the data into two sets - a training set and a testing set. The training set will be used to train the machine learning algorithms, whereas the testing set will be used to verify the accuracy of the machine learning algorithms. 
+
+To better visualize this relationship, think of a time where you studied for a math exam by completing practice problems. Then, you tested your knowledge by completing the exam. The practice problems you completed were your training set, and the real exam was the testing set. **It is imperative that you keep your training and testing sets separate during the training process** - if your machine learning algorithm is tested with a data point it's already seen before, it may report a testing accuracy that is higher than it actually is.
+
+Thankfully, scikit-learn gives us a method for automatically splitting up our full dataset into smaller training and testing sets.
+```
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.50, random_state=42)
+```
+In the above example, we import the `train_test_split` method from scikit-learn's `model_selection` sublibrary and use it to generate four smaller arrays:
+`X_train`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
+`Y_train`, a one-dimensional array containing the expected outcome of each data entry in `X_train`.
+
+`X_test`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
+`Y_test`, a one-dimensional array containing the expected outcome of each data entry in `X_test`.
+
+🤔 **Food for Thought:** It can be tough to find a good ratio between the training and testing set size. In this case, we split it evenly (`test_size=0.5`), but many algorithms use much smaller testing set sizes (closer to 0.2). Although it may be tempting to improve your algorithm's accuracy by increasing the size of the training set, also consider that this will increase the margin of error of your testing accuracy.
+
