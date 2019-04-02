@@ -83,7 +83,8 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-# Fit the model to the training set. Epochs is the number of times we fit the neural network to the training set.
+# Fit the model to the training set. Epochs is the number of times we fit the neural network to the 
+# training set.
 # Be careful of adding too many epochs, however! Overfitting can be just as bad as underfitting.
 model.fit(x_train, y_train, epochs=5)
 
