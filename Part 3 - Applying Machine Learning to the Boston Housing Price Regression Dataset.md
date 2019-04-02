@@ -38,7 +38,7 @@ Also fortunately, many of them work the same! Here's the basic form:
 ```python
 from sklearn.<some_model_group> import <ModelOfChoice>
 
-...<load up your data, etc.>...
+#...<load up your data, etc.>...
 
 # Create the model
 model = <ModelOfChoice>()
@@ -52,3 +52,17 @@ print("<ModelOfChoice> Accuracy:", str(model.score(xtest, ytest) * 100) + "%")
 
 Now, play around and see what you can find! What models work the best for this dataset? What variables can you tweak to get better results?
 
+# Using Tensorflow
+Just like with the MNIST dataset, we can use a neural network to make predictions here as well!
+
+Tensorflow thankfully comes with its own version of the Boston housing dataset, which can be accessed similarly to the MNIST set.
+
+```python
+import tensorflow as tf
+
+boston = tf.keras.datasets.boston_housing
+
+(X_train, Y_train), (X_test, Y_test) = boston.load_data()
+```
+
+See what you're able to do! It may take a lot of tweaking (especially with respect to the organization of the data), but the neural network from Part II should work great with this dataset.
