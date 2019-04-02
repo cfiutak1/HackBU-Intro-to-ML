@@ -53,7 +53,10 @@ You can find other useful datasets in the [official scikit-learn documentation](
 Now, we're going to split the data into two sets - a training set and a testing set. The training set will be used to train the machine learning algorithms, whereas the testing set will be used to verify the accuracy of the machine learning algorithms. 
 
 
-To better visualize this relationship, think of a time where you studied for a math exam by completing practice problems. Then, you tested your knowledge by completing the exam. The practice problems you completed were your training set, and the real exam was the testing set. **It is imperative that you keep your training and testing sets separate during the training process** - if your machine learning algorithm is tested with a data point it's already seen before, it may report a testing accuracy that is higher than it actually is.
+To better visualize this relationship, think of a time where you studied for a math exam by completing practice problems. Then, you tested your knowledge by completing the exam. The practice problems you completed were your training set, and the real exam was the testing set. 
+
+
+⚠ **It is imperative that you keep your training and testing sets separate during the training process** - if your machine learning algorithm is tested with a data point it's already seen before, it may report a testing accuracy that is higher than it actually is.
 
 
 Thankfully, scikit-learn gives us a method for automatically splitting up our full dataset into smaller training and testing sets.
