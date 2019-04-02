@@ -44,7 +44,7 @@ X_train, X_test = X_train / 255, X_test / 255
 
 # Create a neural network model
 model = tf.keras.models.Sequential([
-   
+   # Vectorize the input for faster processing
   tf.keras.layers.Flatten(input_shape=(28, 28)),
   
   # This line adds a dense layer to the neural network. Dense layers are fully connected layers, 
