@@ -2,7 +2,7 @@
 We were able to achieve a respectable accuracy on scikit-learn's digits dataset using logistic regression. However, the dataset qas quite small and simple - each image was only 8 pixels by 8 pixels. Many monitors today support a resolution of at least 1920 pixels by 1080 pixels, so 8x8 is almost primitive compared to real-world data we'd be working with.
 
 Take, for instance, the MNIST dataset, which contains 28 x 28 pixel handwritten digits for classification. If we train a logistic regression model on this data, we'll see a noticeable decrease in performance. 
-```
+```python
 import tensorflow as tf
 
 # Load in the MNIST dataset from TensorFlow
@@ -77,7 +77,7 @@ model = tf.keras.models.Sequential([
 
 ## Training Our Model
 
-```
+```python
 # Compile the model
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
