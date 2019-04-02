@@ -5,7 +5,7 @@ Accessing the data in the Boston house-price dataset is exactly the same as acce
 
 ```python
 from sklearn.datasets import load_boston
-...<more imports/code/whatever>...
+# ...<more imports/code/whatever>...
 boston = load_boston()
 
 xtrain, xtest, ytrain, ytest = train_test_split(boston.data,
