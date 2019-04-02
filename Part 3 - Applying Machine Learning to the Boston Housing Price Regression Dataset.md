@@ -66,3 +66,5 @@ boston = tf.keras.datasets.boston_housing
 ```
 
 See what you're able to do! It may take a lot of tweaking (especially with respect to the organization of the data), but the neural network from Part II should work great with this dataset.
+
+*(Hint: It may help to tweak some options in the flattening and compiling steps, and to find a different way to measure accuracy...)*
