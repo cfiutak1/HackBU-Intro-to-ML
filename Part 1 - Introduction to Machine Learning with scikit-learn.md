@@ -71,9 +71,8 @@ X_train, X_test, y_train, y_test = train_test_split(digits.data,
                                                     digits.target, 
                                                     test_size=0.50, 
                                                     random_state=42)
-# Note: random_state=42 seeds the random value with 42, meaning that 
-# everyone that runs this code will have the same accuracy.
-# Machine learning algorithms have a degree of randomness to them, 
+# Note: random_state=42 seeds the random value with 42, meaning that everyone that runs this code 
+# will have the same accuracy. Machine learning algorithms have a degree of randomness to them, 
 # which can be mitigated by using the same random seed.
 # Disregard this if you don't know what that means.
 ```
