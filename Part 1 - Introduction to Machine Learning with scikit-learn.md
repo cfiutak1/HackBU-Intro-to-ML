@@ -13,23 +13,27 @@ To get a better sense of what we're working with, let's take a look at the attri
 ```
 print(dir(digits))
 ```
+we can see that the digits dataset has 5 attributes - DESCR, data, images, target, and target_names. 
+&nbsp;
+&nbsp;
 
-
-we can see that the digits dataset has 5 attributes - DESCR, data, images, target, and target_names. If we want to know even more about the dataset, we can add
+If we want to know even more about the dataset, we can add
 ```
 print(digits.DESCR)
 ```
 which prints out the description of the dataset.
-
+&nbsp;
+&nbsp;
 
 For thoroughness, we can print the shape of the dataset with
 ```
 print(digits.data.shape)
 ```
 which shows that the dataset has 1797 rows and 64 columns.
+&nbsp;
+&nbsp;
 
-
-We can also use the Python library matplotlib to display the images in this dataset. Add the following code:
+We can also use the matplotlib library to display the images in this dataset. Add the following code:
 ```
 import matplotlib.pyplot as plt 
 plt.gray() 
@@ -45,7 +49,8 @@ You can find other useful datasets in the [official scikit-learn documentation](
 
 # Part B: Implementing a Machine Learning Algorithm
 For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
-
+&nbsp;
+&nbsp;
 
 We'll start by importing both algorithms from scikit-learn.
 ```
