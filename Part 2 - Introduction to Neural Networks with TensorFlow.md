@@ -9,8 +9,9 @@ import tensorflow as tf
 mnist = tf.keras.datasets.mnist
 
 # Split the MNIST set into training and testing sets
-(X_train, Y_train), (X_test, Y_test) = mnist.load_data()
-X_train, X_test = X_train / 255, X_test / 255
+(X_train, Y_train), (X_test, Y_test) = mnist.load_data() # This is already split, unlike in digits
+X_train, X_test = X_train / 255, X_test / 255            # Pixel values are 0-255, so let's shrink
+                                                         # them to between 0 and 1
 
 # Reshape the training and testing sets for compatibility with sklearn's LogisticRegression()
 X_train = X_train.reshape(X_train.shape[0], -1)
