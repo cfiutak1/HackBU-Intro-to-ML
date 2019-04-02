@@ -2,13 +2,13 @@
 The first step to developing a good machine learning algorithm is using a good dataset. Many of the most accurate machine learning algorithms have millions if not billions of entries in their training data sets. Fortuntately for us, there are many robust datasets we can use to build our ML algorithms. 
 
 The scikit-learn library comes with some good starting datasets. For today's activity, we'll be using the digits dataset, which contains images of handwritten numerical digits. To use this dataset, we'll import the load_digits function from sklearn.datasets and store it in a variable called digits.
-
 ```
 from sklearn.datasets import load_digits
 digits = load_digits()
 ```
+\
 
-To get a better sense of what we're working with, let's take a look at the attributes of `digits`. If we add the following line to our code:
+To get a better sense of what we're working with, let's take a look at the attributes of `digits`. We can add the following line to our code to see the digit dataset's attributes:
 ```
 print(dir(digits))
 ```
