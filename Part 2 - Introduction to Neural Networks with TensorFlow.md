@@ -48,7 +48,7 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Flatten(input_shape=(28, 28)),
   
   # This line adds a dense layer to the neural network. Dense layers are fully connected layers, 
-  which are the standard "layers" in a neural network.
+  # which are the standard "layers" in a neural network.
  
   # 128 - units of output dimensionality. We generally try to use powers of 2 (64, 128, 256, etc) 
   # here because they're most efficient on GPUs. Finding a good value here is important - 
