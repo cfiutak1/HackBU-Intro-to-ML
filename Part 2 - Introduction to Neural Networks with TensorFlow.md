@@ -122,8 +122,8 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 '''
-Fit the model to the training set. Epochs is the number of times we fit the neural network to the training set.
-Be careful of adding too many epochs, however! Overfitting can be just as bad as underfitting.
+Fit the model to the training set. Epochs is the number of times we fit the network to the training
+set. Be careful of adding too many epochs, however! Overfitting can be just as bad as underfitting.
 '''
 model.fit(X_train, Y_train, epochs=5)
 
