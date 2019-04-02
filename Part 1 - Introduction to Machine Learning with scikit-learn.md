@@ -12,7 +12,7 @@ To get a better sense of what we're working with, let's take a look at the attri
 print(dir(digits))
 ```
 
-##  
+#  
 
 If we want to know even more about the dataset, we can add
 ```
