@@ -134,8 +134,8 @@ S-shaped line of best fit. Here's a visualization:
 
 ![Logistic Regression](images/logit.jpeg)
 
-But Logistic Regression is generally used for classifying discrete values, whereas
-Linear Regression is generally used for predicting continuous values.
+In short, Logistic Regression is generally used for classifying discrete values (e.g. choosing either 1 or 0), whereas
+Linear Regression is generally used for predicting continuous values (e.g. choosing a decimal between 1 and 0).
 
 ## Results
 
