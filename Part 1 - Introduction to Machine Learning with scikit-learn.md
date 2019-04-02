@@ -133,5 +133,5 @@ Clearly, logistic regression is a far more suitable algorithm for correctly dete
 
 
 ### 📚 Further Reading
-For an exhaustive list of the machine learning algorithms scikit-learn has to offer, check out [this page in their documentation] (https://scikit-learn.org/stable/supervised_learning.html). Machine learning algorithms are not one size fits all - different problems require different algorithms. There are many cases where linear regression will outperform logistic regression, for instance, so it's good to understand the various types of machine learning algorithms.
+For an exhaustive list of the machine learning algorithms scikit-learn has to offer, check out [this page in their documentation](https://scikit-learn.org/stable/supervised_learning.html). Machine learning algorithms are not one size fits all - different problems require different algorithms. There are many cases where linear regression will outperform logistic regression, for instance, so it's good to understand the various types of machine learning algorithms.
 
