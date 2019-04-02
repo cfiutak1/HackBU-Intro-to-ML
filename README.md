@@ -100,3 +100,9 @@ logistic_model = LogisticRegression()
 # Fit the LogisticRegression algorithm with the training data
 logistic_model.fit(X_train, Y_train)
 ```
+
+And now to test these algorithms:
+```
+print("Linear Regression accuracy:", str(linear_model.score(X_test, Y_test) * 100) + "%")
+print("Logistic Regression accuracy:", str(logistic_model.score(X_test, Y_test) * 100) + "%")
+```
