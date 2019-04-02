@@ -115,6 +115,12 @@ logistic_model.fit(X_train, Y_train)
 
 And now to test these algorithms:
 ```
-print("Linear Regression accuracy:", str(linear_model.score(X_test, Y_test) * 100) + "%")
-print("Logistic Regression accuracy:", str(logistic_model.score(X_test, Y_test) * 100) + "%")
+print("Linear Regression accuracy:", linear_model.score(X_test, Y_test) * 100, "%")
+print("Logistic Regression accuracy:", logistic_model.score(X_test, Y_test) * 100, "%")
+```
+&nbsp;
+
+```
+Linear Regression accuracy: 57.76594509083273 %
+Logistic Regression accuracy: 94.88320355951056 %
 ```
