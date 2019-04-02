@@ -42,7 +42,7 @@ If all goes well, you will see the following image appear on your screen -
 ![matplotlib result](images/part1_matplotlib_image.png)
 &nbsp;
 
-### 📚Further Reading
+### 📚 Further Reading
 You can find other useful datasets in the [official scikit-learn documentation](https://scikit-learn.org/stable/datasets/index.html).
 
 ---
@@ -72,13 +72,9 @@ X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, 
 
 In the above example, we import the `train_test_split` method from scikit-learn's `model_selection` sublibrary and use it to generate four smaller arrays:
 `X_train`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
-
 `Y_train`, a one-dimensional array containing the expected outcome of each data entry in `X_train`.
 
-&nbsp;
-
 `X_test`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
-
 `Y_test`, a one-dimensional array containing the expected outcome of each data entry in `X_test`.
 
 Continuing our analogy of studying for a math exam, 
