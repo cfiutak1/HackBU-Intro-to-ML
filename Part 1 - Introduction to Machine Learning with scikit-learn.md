@@ -1,4 +1,4 @@
-# Part A: Finding and Exploring a Dataset
+# Finding a Dataset
 The first step to developing a good machine learning algorithm is using a good dataset. Many of the most accurate machine learning algorithms have millions if not billions of entries in their training data sets. Fortuntately for us, there are many robust datasets we can use to build our ML algorithms. 
 
 The scikit-learn library comes with some good starting datasets. For today's activity, we'll be using the digits dataset, which contains images of handwritten numerical digits. To use this dataset, we'll import the load_digits function from sklearn.datasets and store it in a variable called digits.
@@ -8,19 +8,17 @@ digits = load_digits()
 ```
 &nbsp;
 
+# Exploring a Dataset
 To get a better sense of what we're working with, let's take a look at the attributes of `digits`. If we add the following line to our code, we can see that the digits dataset has 5 attributes - `DESCR`, `data`, `images`, `target`, and `target_names`. 
 ```
 print(dir(digits))
 ```
 &nbsp;
-  
 
-If we want to know even more about the dataset, we can add
+If we want to know even more about the dataset, we can print the description of `digits`.
 ```
 print(digits.DESCR)
 ```
-which prints out the description of the dataset.
-&nbsp;
 &nbsp;
 
 For thoroughness, we can print the shape of the dataset with
