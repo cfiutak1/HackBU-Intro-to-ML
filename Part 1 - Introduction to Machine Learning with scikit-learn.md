@@ -27,7 +27,9 @@ print(digits.DESCR)
 
 For thoroughness, we can print the shape of the dataset with
 ```
-print(digits.data.shape) # Should show 1797 rows and 64 columns, where each column is representative of one pixel in an image
+print(digits.data.shape) # Should show 1797 rows and 64 columns
+                         # Each row contains the data of an image
+                         # Each column is representative of one pixel in the image
 ```
 &nbsp;
 
@@ -65,10 +67,10 @@ Thankfully, scikit-learn gives us a method for automatically splitting up our fu
 
 ```
 from sklearn.model_selection import train_test_split
-# random_state=42 seeds the random value with 42, meaning that everyone that runs this code will have the same accuracy.
+X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.50, random_state=42)
+# Note: random_state=42 seeds the random value with 42, meaning that everyone that runs this code will have the same accuracy.
 # Machine learning algorithms have a degree of randomness to them, which can be mitigated by using the same random seed.
 # Disregard this if you don't know what that means.
-X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.50, random_state=42)
 ```
 
 In the above example, we import the `train_test_split` method from scikit-learn's `model_selection` sublibrary and use it to generate four smaller arrays:
