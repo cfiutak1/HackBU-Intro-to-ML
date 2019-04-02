@@ -130,7 +130,7 @@ logistic_model.fit(X_train, Y_train)
 ```
 
 In a very simple case, Logistic Regression can kind of be thought as drawing an
-S-shaped line of best fit. Here's an example of where that might come in handy:
+S-shaped line of best fit. Here's a visualization:
 
 ![Logistic Regression](images/logit.jpeg)
 
