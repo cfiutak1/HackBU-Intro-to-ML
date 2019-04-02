@@ -1,5 +1,4 @@
-## Part 1: Machine Learning with scikit-learn
-### Part 1a: Finding and Exploring a Dataset
+# Part A: Finding and Exploring a Dataset
 The first step to developing a good machine learning algorithm is using a good dataset. Many of the most accurate machine learning algorithms have millions if not billions of entries in their training data sets. Fortuntately for us, there are many robust datasets we can use to build our ML algorithms. 
 
 The scikit-learn library comes with some good starting datasets. For today's activity, we'll be using the digits dataset, which contains images of handwritten numerical digits. To use this dataset, we'll import the load_digits function from sklearn.datasets and store it in a variable called digits.
@@ -39,7 +38,7 @@ to your script and run it. You'll see an image like
 
 You can find other useful datasets in the [official scikit-learn documentation](https://scikit-learn.org/stable/datasets/index.html).
 
-### Part 1b: Implementing a Machine Learning Algorithm
+# Part B: Implementing a Machine Learning Algorithm
 For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
 
 
