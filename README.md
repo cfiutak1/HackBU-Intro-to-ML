@@ -10,5 +10,6 @@ The scikit-learn library comes with some good starting datasets. For today's act
 
 `
 from sklearn.datasets import load_digits
+
 digits = load_digits()
 `
