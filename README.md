@@ -22,3 +22,16 @@ we can see that the digits dataset has 5 attributes - DESCR, data, images, targe
 print(digits.DESCR)
 ```
 which prints out the description of the dataset.
+
+
+We can also use the Python library matplotlib to display the images in this dataset. Add the following code:
+```
+import matplotlib.pyplot as plt 
+plt.gray() 
+plt.matshow(digits.images[0]) 
+plt.show() 
+```
+
+to your script and run it. You'll see an image like
+
+#TODO: Add image
