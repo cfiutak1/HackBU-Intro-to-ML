@@ -37,8 +37,8 @@ plt.show()
 &nbsp;
 
 If all goes well, you will see the following image appear on your screen -
-
-## TODO: Add image
+![matplotlib result](images/part1_matplotlib_image.png)
+&nbsp;
 
 ### 📚Further Reading
 You can find other useful datasets in the [official scikit-learn documentation](https://scikit-learn.org/stable/datasets/index.html).
