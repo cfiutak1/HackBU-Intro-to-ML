@@ -77,7 +77,7 @@ Continuing our analogy of studying for a math exam,
 
 
 ### 🤔 Food for Thought 
-It can be tough to find a good ratio between the training and testing set size. In this case, we split it evenly (`test_size=0.5`), but many algorithms use much smaller testing set sizes (closer to 0.2). Although it may be tempting to improve your algorithm's accuracy by increasing the size of the training set, also consider that this will increase the margin of error of your testing accuracy.
+It can be tough to find a good ratio between the training and testing set size. In this case, we split it evenly (`test_size=0.5`), but many algorithms use much smaller testing set sizes (closer to 0.2). Although it may be tempting to improve your algorithm's accuracy by increasing the size of the training set, also consider that this will increase testing accuracy's margin of error.
 
 ---
 
