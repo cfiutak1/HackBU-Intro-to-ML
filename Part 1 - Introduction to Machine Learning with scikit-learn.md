@@ -8,6 +8,8 @@ digits = load_digits()
 ```
 &nbsp;
 
+---
+
 # Exploring a Dataset
 To get a better sense of what we're working with, let's take a look at the attributes of `digits`. If we add the following line to our code, we can see that the digits dataset has 5 attributes - `DESCR`, `data`, `images`, `target`, and `target_names`. 
 ```
@@ -43,7 +45,9 @@ If all goes well, you will see the following image appear on your screen -
 ### 📚Further Reading
 You can find other useful datasets in the [official scikit-learn documentation](https://scikit-learn.org/stable/datasets/index.html).
 
-# Part B: Implementing a Machine Learning Algorithm
+---
+
+# Implementing a Machine Learning Algorithm
 For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
 &nbsp;
 &nbsp;
