@@ -31,6 +31,7 @@ print("Logistic Regression Regression accuracy:", str(logistic_model.score(X_tes
 While logistic regression achieved ~95% accuracy on the digits dataset, it only achieves ~90% on the MNIST dataset. What if we need better than this? This is where neural networks come in handy. 
 
 # Building Our First Neural Network
+## Creating a Neural Network Model
 ```
 import tensorflow as tf
 
@@ -66,6 +67,9 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(10, activation='softmax')
 ])
 ```
+
+## Training Our Model
+
 ```
 # Compile the model
 model.compile(optimizer='adam',
