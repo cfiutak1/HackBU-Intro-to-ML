@@ -71,18 +71,16 @@ X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, 
 ```
 
 In the above example, we import the `train_test_split` method from scikit-learn's `model_selection` sublibrary and use it to generate four smaller arrays:
-`X_train`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
-`Y_train`, a one-dimensional array containing the expected outcome of each data entry in `X_train`.
-
-`X_test`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
-`Y_test`, a one-dimensional array containing the expected outcome of each data entry in `X_test`.
+* `X_train`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
+* `Y_train`, a one-dimensional array containing the expected outcome of each data entry in `X_train`.
+* `X_test`, a two-dimensional array containing a certain amount of entries from the main dataset. Does not include the expected outcome of each data entry.
+* `Y_test`, a one-dimensional array containing the expected outcome of each data entry in `X_test`.
 
 Continuing our analogy of studying for a math exam, 
-`X_train` contains all of your answers to the practice problems
-`Y_train` contains all the correct answers to the practice problems
-
-`X_test` contains all of your answers to the real exam
-`Y_test` contains all of the correct answers to the real exam
+* `X_train` contains all of your answers to the practice problems
+* `Y_train` contains all the correct answers to the practice problems
+* `X_test` contains all of your answers to the real exam
+* `Y_test` contains all of the correct answers to the real exam
 
 
 🤔 **Food for Thought:** It can be tough to find a good ratio between the training and testing set size. In this case, we split it evenly (`test_size=0.5`), but many algorithms use much smaller testing set sizes (closer to 0.2). Although it may be tempting to improve your algorithm's accuracy by increasing the size of the training set, also consider that this will increase the margin of error of your testing accuracy.
