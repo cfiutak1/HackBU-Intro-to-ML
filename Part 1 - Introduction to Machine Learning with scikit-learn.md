@@ -87,6 +87,7 @@ Continuing our analogy of studying for a math exam,
 
 
 Let's get to the fun part - implementing these algorithms.
+
 **Linear Regression**
 ```
 # Initialize a LinearRegression object
