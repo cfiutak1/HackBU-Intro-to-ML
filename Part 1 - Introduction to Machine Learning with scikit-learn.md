@@ -27,18 +27,20 @@ print(digits.data.shape) # Should show 1797 rows and 64 columns
 ```
 &nbsp;
 
-We can also use the matplotlib library to display the images in this dataset. Add the following code:
+We can also use the matplotlib library to display the images in this dataset. Add the following code to your script to display the first image in the dataset:
 ```
 import matplotlib.pyplot as plt 
 plt.gray() 
 plt.matshow(digits.images[0]) 
 plt.show() 
 ```
-to your script and run it. You'll see an image like
+&nbsp;
 
+If all goes well, you will see the following image appear on your screen -
 
 ## TODO: Add image
 
+### 📚Further Reading
 You can find other useful datasets in the [official scikit-learn documentation](https://scikit-learn.org/stable/datasets/index.html).
 
 # Part B: Implementing a Machine Learning Algorithm
