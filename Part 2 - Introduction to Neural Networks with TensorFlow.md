@@ -32,7 +32,7 @@ While logistic regression achieved ~95% accuracy on the digits dataset, it only 
 
 # Building Our First Neural Network
 ## Creating a Neural Network Model
-```
+```python
 import tensorflow as tf
 
 # Load in the MNIST dataset from TensorFlow
@@ -44,14 +44,20 @@ X_train, X_test = X_train / 255, X_test / 255
 
 # Create a neural network model
 model = tf.keras.models.Sequential([
-  # 
+   
   tf.keras.layers.Flatten(input_shape=(28, 28)),
   
-  # This line adds a dense layer to the neural network. Dense layers are fully connected layers, which are the standard "layers" in a neural network.
-  #
-  # 128 - units of output dimensionality. We generally try to use powers of 2 (64, 128, 256, etc) here because they're most efficient on GPUs. Finding a good value here is important - 2048 would be overkill on the MNIST dataset, but 16 might not be enough.
-  #
-  # activation='relu' - relu stands for Rectified Linear Unit. Essentially, this activation adds non-linearity to the neural network. If you try to run a linear regression model on this dataset, you'll see it does very poorly. This suggests that it would be a good idea to add some non-linearity to this problem.
+  # This line adds a dense layer to the neural network. Dense layers are fully connected layers, 
+  which are the standard "layers" in a neural network.
+ 
+  # 128 - units of output dimensionality. We generally try to use powers of 2 (64, 128, 256, etc) 
+  # here because they're most efficient on GPUs. Finding a good value here is important - 
+  2048 would be overkill on the MNIST dataset, but 16 might not be enough.
+ 
+  # activation='relu' - relu stands for Rectified Linear Unit. Essentially, this activation adds 
+  # non-linearity to the neural network. If you try to run a linear regression model on this dataset, 
+  # you'll see it does very poorly. This suggests that it would be a good idea to add some non-linearity 
+  # to this problem.
   tf.keras.layers.Dense(128, activation='relu'),
   
   # Dropout is a good layer for avoiding overfitting - training a machine learning algorithm
