@@ -19,9 +19,10 @@ X_test = X_test.reshape(X_test.shape[0], -1)
 
 from sklearn.linear_model import LogisticRegression
 
-# Initialize a logisticRegression object
+# Initialize a LogisticRegression object
 logistic_model = LogisticRegression()
-# Fit the logisticRegression algorithm with the training data
+
+# Fit the logistic regression algorithm with the training data
 logistic_model.fit(X_train[:10000, :], Y_train[:10000])
 
 print("Logistic Regression Regression accuracy:", str(logistic_model.score(X_test, Y_test) * 100) + "%")
