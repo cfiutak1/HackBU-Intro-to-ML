@@ -1,5 +1,23 @@
 # Why Neural Networks?
-We were able to achieve a respectable accuracy on scikit-learn's digits dataset using logistic regression. However, the dataset qas quite small and simple - each image was only 8 pixels by 8 pixels. Many monitors today support a resolution of at least 1920 pixels by 1080 pixels, so 8x8 is almost primitive compared to real-world data we'd be working with.
+
+So why use Neural Networks at all when we have such great models like Linear and Logistic Regression at our disposal?
+
+Well sometimes, these models just  aren't enough to separate out our data. Take this dataset for example:
+
+![Difficult data](gaussian-kernel.png)
+
+We can't just draw a straight line, or an S-shaped line though this thing to cleanly
+divide the red and blue points. We need a model that can take on more non-linear shapes.
+That's where Neural Networks can be very useful!
+
+> **NOTE**: Neural Networks can still be overkill for problems like this, but this is for the sake
+of an introductory workshop. There are plenty of other models in the Scikit Learn library that
+can handle data like this. Try checking out [Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)
+for example.
+
+---
+
+We were able to achieve a respectable accuracy on scikit-learn's digits dataset using logistic regression. However, the dataset was quite small and simple - each image was only 8 pixels by 8 pixels. Many monitors today support a resolution of at least 1920 pixels by 1080 pixels, so 8x8 is almost primitive compared to real-world data we'd be working with.
 
 Take, for instance, the MNIST dataset, which contains 28 x 28 pixel handwritten digits for classification. If we train a logistic regression model on this data, we'll see a noticeable decrease in performance. 
 ```python
