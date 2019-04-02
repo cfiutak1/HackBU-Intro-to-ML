@@ -47,15 +47,8 @@ You can find other useful datasets in the [official scikit-learn documentation](
 
 ---
 
-# Implementing a Machine Learning Algorithm
-For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
-&nbsp;
-&nbsp;
+# Creating Training and Testing Sets
 
-We'll start by importing both algorithms from scikit-learn.
-```
-from sklearn.linear_model import LinearRegression, LogisticRegression
-```
 
 Now, we're going to split the data into two sets - a training set and a testing set. The training set will be used to train the machine learning algorithms, whereas the testing set will be used to verify the accuracy of the machine learning algorithms. 
 
@@ -86,9 +79,18 @@ Continuing our analogy of studying for a math exam,
 ### 🤔 Food for Thought 
 It can be tough to find a good ratio between the training and testing set size. In this case, we split it evenly (`test_size=0.5`), but many algorithms use much smaller testing set sizes (closer to 0.2). Although it may be tempting to improve your algorithm's accuracy by increasing the size of the training set, also consider that this will increase the margin of error of your testing accuracy.
 
+---
 
+# Implementing a Machine Learning Algorithm
 Let's get to the fun part - implementing these algorithms.
+For now, we'll start off with two regression-based algorithms for supervised learning - Linear Regression and Logistic Regression.
+&nbsp;
+&nbsp;
 
+We'll start by importing both algorithms from scikit-learn.
+```
+from sklearn.linear_model import LinearRegression, LogisticRegression
+```
 **Linear Regression**
 ```
 # Initialize a LinearRegression object
