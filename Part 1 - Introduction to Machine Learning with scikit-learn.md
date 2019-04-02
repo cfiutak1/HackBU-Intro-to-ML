@@ -6,7 +6,7 @@ The scikit-learn library comes with some good starting datasets. For today's act
 from sklearn.datasets import load_digits
 digits = load_digits()
 ```
-\
+
 
 To get a better sense of what we're working with, let's take a look at the attributes of `digits`. We can add the following line to our code to see the digit dataset's attributes:
 ```
