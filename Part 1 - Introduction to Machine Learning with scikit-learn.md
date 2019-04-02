@@ -23,10 +23,8 @@ print(digits.DESCR)
 
 For thoroughness, we can print the shape of the dataset with
 ```
-print(digits.data.shape)
+print(digits.data.shape) # Should show 1797 rows and 64 columns
 ```
-which shows that the dataset has 1797 rows and 64 columns.
-&nbsp;
 &nbsp;
 
 We can also use the matplotlib library to display the images in this dataset. Add the following code:
