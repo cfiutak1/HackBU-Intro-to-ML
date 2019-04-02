@@ -4,7 +4,7 @@ So why use Neural Networks at all when we have such great models like Linear and
 
 Well sometimes, these models just  aren't enough to separate out our data. Take this dataset for example:
 
-![Difficult data](gaussian-kernel.png)
+![Difficult data](images/gaussian-kernel.png)
 
 We can't just draw a straight line, or an S-shaped line though this thing to cleanly
 divide the red and blue points. We need a model that can take on more non-linear shapes.
