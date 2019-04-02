@@ -87,10 +87,10 @@ model.compile(optimizer='adam',
 # Fit the model to the training set. Epochs is the number of times we fit the neural network to the 
 # training set.
 # Be careful of adding too many epochs, however! Overfitting can be just as bad as underfitting.
-model.fit(x_train, y_train, epochs=5)
+model.fit(X_train, Y_train, epochs=5)
 
 # Evaluate the accuracy of the neural network and print it out
-test_loss, test_acc = model.evaluate(x_test, y_test)
+test_loss, test_acc = model.evaluate(X_test, Y_test)
 
 print(train_acc)
 print(test_acc)
