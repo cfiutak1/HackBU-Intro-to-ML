@@ -61,15 +61,16 @@ model = tf.keras.models.Sequential([
   tf.keras.layers.Dense(128, activation='relu'),
   
   # Dropout is a good layer for avoiding overfitting - training a machine learning algorithm
-  # on a training set too much. This causes the machine learning algorithm to notice irrelevant aspects ("noise")
-  # of the training set. It essentially adds a layer of randomness to the neural network by ignoring a percentage
-  # of random inputs (in this case, ignore a random 20%) on each iteration. 
+  # on a training set too much. This causes the machine learning algorithm to notice irrelevant aspects 
+  # ("noise") of the training set. It essentially adds a layer of randomness to the neural network by ignoring 
+  # a percentage of random inputs (in this case, ignore a random 20%) on each iteration. 
   # "If you're good at something while drunk, you'll be really good at it sober" - Ryan McCormick, 2019
-  # 
+  
   tf.keras.layers.Dropout(0.2),
   
-  # Add another dense layer, but this time with an output dimensionality of 10 units because there are only 10 options (there are only 10 digits).
-  # Softmax turns the arbitrary outputs of the neural network into "probabilities"
+  # Add another dense layer, but this time with an output dimensionality of 10 units because there are only 
+  # 10 options (there are only 10 digits).
+  # Softmax turns the arbitrary outputs of the neural network into "probabilities".
   tf.keras.layers.Dense(10, activation='softmax')
 ])
 ```
