@@ -27,7 +27,7 @@ print(digits.DESCR)
 
 For thoroughness, we can print the shape of the dataset with
 ```
-print(digits.data.shape) # Should show 1797 rows and 64 columns
+print(digits.data.shape) # Should show 1797 rows and 64 columns, where each column is representative of one pixel in an image
 ```
 &nbsp;
 
@@ -35,7 +35,7 @@ We can also use the matplotlib library to display the images in this dataset. Ad
 ```
 import matplotlib.pyplot as plt 
 plt.gray() 
-plt.matshow(digits.images[0]) 
+plt.matshow(digits.images[0]) # Change the number here to look at different images
 plt.show() 
 ```
 &nbsp;
